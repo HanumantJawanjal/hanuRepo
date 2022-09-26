@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="loginpgtest.LoginPgTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="varifyPasswordByUpCase"/>
+          <include name="varifyPasswordByLowCase"/>
+        </methods>
+      </class> <!-- loginpgtest.LoginPgTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test thread-count="5" name="DashboardTest(failed)">
+    <classes>
+      <class name="dashboardtest.DashboardPgTest">
+        <methods>
+          <include name="veriryPhpPgTitle"/>
+          <include name="veriryJ2eePgTitle"/>
+          <include name="verirySelePgTitle"/>
+          <include name="veriryPythonPgTitle"/>
+        </methods>
+      </class> <!-- dashboardtest.DashboardPgTest -->
+    </classes>
+  </test> <!-- DashboardTest(failed) -->
+  <test thread-count="5" name="UserpgTest(failed)">
+    <classes>
+      <class name="userpgtest.UserPgTest">
+        <methods>
+          <include name="varifyMobileNoOfUsers"/>
+        </methods>
+      </class> <!-- userpgtest.UserPgTest -->
+    </classes>
+  </test> <!-- UserpgTest(failed) -->
+  <test thread-count="5" name="DownloadsTest(failed)">
+    <classes>
+      <class name="downloadstest.DownloadsTest">
+        <methods>
+          <include name="validvalidVendCommonOpSystem"/>
+          <include name="validVendCommonOpSystem"/>
+        </methods>
+      </class> <!-- downloadstest.DownloadsTest -->
+    </classes>
+  </test> <!-- DownloadsTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Suite">
+	<listeners>
+		<listener class-name="listeners.MyListeners"></listener>
+	</listeners>
+	
+	<test name="LoginTest">
+		<classes>
+			<class name="loginpgtest.LoginPgTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test  name="DashboardTest">
+		<classes>
+			<class name="dashboardtest.DashboardPgTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="UserpgTest">
+		<classes>
+			<class name="userpgtest.UserPgTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="OperatorsTest">
+		<classes>
+			<class name="operatorspgtest.OperatorsPgTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="DownloadsTest">
+		<classes>
+			<class name="downloadstest.DownloadsTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
