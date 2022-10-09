@@ -15,34 +15,34 @@ public class DashboardPgTest extends BaseClass {
 	@Test(priority=1)
 	public void verirySelePgTitle() throws Exception{
 		dashboard = new DashboardPg(driver);
-		LoginPgTest.dashboard.clickSeleCourse(); 
+	    dashboard.clickSeleCourse(); 
 		driver.switchTo().window("file:///D:/Downloads/javabykiran-Selenium-Softwares/javabykiran-Selenium-Softwares/Offline%20Website/pages/pdf/selenium-testing-syllabus-jbk.pdf");
 		Thread.sleep(2000);	
 		System.out.println("Page title of new tab: " + driver.getTitle());
 		dashboard.actSele = driver.getTitle().equals("Java By Kiran");
 	    driver.switchTo().window(dashboard.parent);
-		Assert.assertTrue(LoginPgTest.dashboard.actSele);
+		Assert.assertTrue(dashboard.actSele);
 	}
 	
 	@Test(priority=2)
 	public void veriryJ2eePgTitle() throws Exception{
 		dashboard = new DashboardPg(driver);
-		LoginPgTest.dashboard.clickJ2eeCourse();
-		Assert.assertTrue(LoginPgTest.dashboard.actJ2ee);
+		dashboard.clickJ2eeCourse();
+		Assert.assertTrue(dashboard.actJ2ee);
 	}
 	
 	@Test(priority=3)
 	public void veriryPythonPgTitle(){
 		dashboard = new DashboardPg(driver);
-		LoginPgTest.dashboard.clickPythCourse();
-		Assert.assertTrue(LoginPgTest.dashboard.actPython);
+		dashboard.clickPythCourse();
+		Assert.assertTrue(dashboard.actPython);
  	}
 
 	@Test(priority=4)
 	public void veriryPhpPgTitle(){
-      dashboard = new DashboardPg(driver);
-		LoginPgTest.dashboard.clickPhpCourse();
-		Assert.assertTrue(LoginPgTest.dashboard.actPhp);
+        dashboard = new DashboardPg(driver);
+		dashboard.clickPhpCourse();
+		Assert.assertTrue(dashboard.actPhp);
  	}
 
 	@Test(priority=5)

@@ -2,6 +2,7 @@ package baseclass;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -11,8 +12,8 @@ public class BaseClass {
 
 	public static WebDriver driver = null;
 	public static ExtentReports report = null;
-	public static ExtentSparkReporter sparc = null;
-	public static ExtentTest test = null;
+	public static ExtentSparkReporter sparc = null; // it is to declare the path of report
+	public static ExtentTest test = null;    // it is to crate the logs in report
   
 	public void initilization(){
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -26,7 +27,7 @@ public class BaseClass {
 	public void reportInhit(){
 		report = new ExtentReports();
 		sparc = new ExtentSparkReporter(System.getProperty("user.dir")+"/target/ExtentReport.html");
-	    report.attachReporter(sparc);
+	    report.attachReporter(sparc); // attachreporter is to link sparkreporter and ExtenReport
 	}
 	
 	

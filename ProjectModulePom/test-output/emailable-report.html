@@ -9,115 +9,73 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">LoginTest</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">145,559</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">DashboardTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">4</td><td class="num">6,717</td><td></td><td></td></tr>
-<tr><td><a href="#t2">UserpgTest</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,571</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">OperatorsTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">713</td><td></td><td></td></tr>
-<tr><td><a href="#t4">DownloadsTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">514</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">14</th><th class="num">0</th><th class="num attn">9</th><th class="num">162,074</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">DashboardPgTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">62</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">LoginPgTest</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">10,804</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">7</th><th class="num">10,866</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">loginpgtest.LoginPgTest</td><td><a href="#m0">varifyPasswordByLowCase</a></td><td rowspan="1">1664188834324</td><td rowspan="1">97</td></tr><tr class="failedeven"><td><a href="#m1">varifyPasswordByUpCase</a></td><td rowspan="1">1664188828323</td><td rowspan="1">158</td></tr><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">loginpgtest.LoginPgTest</td><td><a href="#m2">varifyEmailByExtn</a></td><td rowspan="1">1664188794273</td><td rowspan="1">268</td></tr><tr class="passedeven"><td><a href="#m3">varifyEmailBySymbol</a></td><td rowspan="1">1664188762489</td><td rowspan="1">266</td></tr><tr class="passedeven"><td><a href="#m4">varifyNewPgLoad</a></td><td rowspan="1">1664188879404</td><td rowspan="1">9687</td></tr><tr class="passedeven"><td><a href="#m5">varifyPasswordByDigits</a></td><td rowspan="1">1664188855614</td><td rowspan="1">105</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">DashboardTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">dashboardtest.DashboardPgTest</td><td><a href="#m6">veriryJ2eePgTitle</a></td><td rowspan="1">1664188892186</td><td rowspan="1">2310</td></tr><tr class="failedeven"><td><a href="#m7">veriryPhpPgTitle</a></td><td rowspan="1">1664188895352</td><td rowspan="1">658</td></tr><tr class="failedeven"><td><a href="#m8">veriryPythonPgTitle</a></td><td rowspan="1">1664188894676</td><td rowspan="1">496</td></tr><tr class="failedeven"><td><a href="#m9">verirySelePgTitle</a></td><td rowspan="1">1664188889699</td><td rowspan="1">2298</td></tr><tr><th colspan="4">DashboardTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dashboardtest.DashboardPgTest</td><td><a href="#m10">veriryUserPgLoad</a></td><td rowspan="1">1664188896221</td><td rowspan="1">192</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">UserpgTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">userpgtest.UserPgTest</td><td><a href="#m11">varifyMobileNoOfUsers</a></td><td rowspan="1">1664188897401</td><td rowspan="1">2657</td></tr><tr><th colspan="4">UserpgTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">userpgtest.UserPgTest</td><td><a href="#m12">countOfMaleUsers</a></td><td rowspan="1">1664188896534</td><td rowspan="1">866</td></tr><tr class="passedeven"><td><a href="#m13">varifyMahaStateOccur</a></td><td rowspan="1">1664188900254</td><td rowspan="1">2324</td></tr><tr class="passedeven"><td><a href="#m14">varifyMailsOfMahaState</a></td><td rowspan="1">1664188902580</td><td rowspan="1">2229</td></tr><tr class="passedeven"><td><a href="#m15">veriryOperatorsPgLoad</a></td><td rowspan="1">1664188904811</td><td rowspan="1">292</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">OperatorsTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">operatorspgtest.OperatorsPgTest</td><td><a href="#m16">varifyAvailOpByDays</a></td><td rowspan="1">1664188905234</td><td rowspan="1">201</td></tr><tr class="passedeven"><td><a href="#m17">varifyAvailTechPerson</a></td><td rowspan="1">1664188905437</td><td rowspan="1">188</td></tr><tr class="passedeven"><td><a href="#m18">varifyPhNoOfKiran</a></td><td rowspan="1">1664188905627</td><td rowspan="1">156</td></tr><tr class="passedeven"><td><a href="#m19">varifyUsefulLinksPg</a></td><td rowspan="1">1664188905783</td><td rowspan="1">163</td></tr></tbody>
-<tbody id="t4"><tr><th colspan="4">DownloadsTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">downloadstest.DownloadsTest</td><td><a href="#m20">validVendCommonOpSystem</a></td><td rowspan="1">1664188906191</td><td rowspan="1">20</td></tr><tr class="failedeven"><td><a href="#m21">validvalidVendCommonOpSystem</a></td><td rowspan="1">1664188906385</td><td rowspan="1">22</td></tr><tr><th colspan="4">DownloadsTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">downloadstest.DownloadsTest</td><td><a href="#m22">validLogoutPg</a></td><td rowspan="1">1664188906039</td><td rowspan="1">151</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DashboardPgTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">dashboardtest.DashboardPgTest</td><td><a href="#m0">veriryJ2eePgTitle</a></td><td rowspan="1">1665166900463</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m1">veriryPhpPgTitle</a></td><td rowspan="1">1665166900471</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">veriryPythonPgTitle</a></td><td rowspan="1">1665166900467</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m3">verirySelePgTitle</a></td><td rowspan="1">1665166900431</td><td rowspan="1">27</td></tr><tr class="failedeven"><td><a href="#m4">veriryUserPgLoad</a></td><td rowspan="1">1665166900474</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">LoginPgTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">loginpgtest.LoginPgTest</td><td><a href="#m5">varifyPasswordByLowCase</a></td><td rowspan="1">1665166907479</td><td rowspan="1">112</td></tr><tr class="failedeven"><td><a href="#m6">varifyPasswordByUpCase</a></td><td rowspan="1">1665166905879</td><td rowspan="1">117</td></tr><tr><th colspan="4">LoginPgTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">loginpgtest.LoginPgTest</td><td><a href="#m7">varifyEmailByExtn</a></td><td rowspan="1">1665166904275</td><td rowspan="1">163</td></tr><tr class="passedeven"><td><a href="#m8">varifyEmailBySymbol</a></td><td rowspan="1">1665166902735</td><td rowspan="1">161</td></tr><tr class="passedeven"><td><a href="#m9">varifyNewPgLoad</a></td><td rowspan="1">1665166910805</td><td rowspan="1">412</td></tr><tr class="passedeven"><td><a href="#m10">varifyPasswordByDigits</a></td><td rowspan="1">1665166909146</td><td rowspan="1">114</td></tr></tbody>
 </table>
-<h2>LoginTest</h2><h3 id="m0">loginpgtest.LoginPgTest#varifyPasswordByLowCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at loginpgtest.LoginPgTest.varifyPasswordByLowCase(LoginPgTest.java:70)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">loginpgtest.LoginPgTest#varifyPasswordByUpCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at loginpgtest.LoginPgTest.varifyPasswordByUpCase(LoginPgTest.java:59)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">loginpgtest.LoginPgTest#varifyEmailByExtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">loginpgtest.LoginPgTest#varifyEmailBySymbol</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">loginpgtest.LoginPgTest#varifyNewPgLoad</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">loginpgtest.LoginPgTest#varifyPasswordByDigits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>DashboardTest</h2><h3 id="m6">dashboardtest.DashboardPgTest#veriryJ2eePgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-NUE1PJR8&apos;, ip: &apos;192.168.1.218&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Hanumant\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef1d55ebf0d8575c298c836228c524f0
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at dashboardpg.DashboardPg.clickJ2eeCourse(DashboardPg.java:50)
+<h2>DashboardPgTest</h2><h3 id="m0">dashboardtest.DashboardPgTest#veriryJ2eePgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at dashboardpg.DashboardPg.clickJ2eeCourse(DashboardPg.java:47)
 	at dashboardtest.DashboardPgTest.veriryJ2eePgTitle(DashboardPgTest.java:30)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">dashboardtest.DashboardPgTest#veriryPhpPgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-NUE1PJR8&apos;, ip: &apos;192.168.1.218&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Hanumant\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef1d55ebf0d8575c298c836228c524f0
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at dashboardpg.DashboardPg.clickPhpCourse(DashboardPg.java:70)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dashboardtest.DashboardPgTest#veriryPhpPgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at dashboardpg.DashboardPg.clickPhpCourse(DashboardPg.java:68)
 	at dashboardtest.DashboardPgTest.veriryPhpPgTitle(DashboardPgTest.java:44)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">dashboardtest.DashboardPgTest#veriryPythonPgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-NUE1PJR8&apos;, ip: &apos;192.168.1.218&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Hanumant\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef1d55ebf0d8575c298c836228c524f0
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at dashboardpg.DashboardPg.clickPythCourse(DashboardPg.java:60)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">dashboardtest.DashboardPgTest#veriryPythonPgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at dashboardpg.DashboardPg.clickPythCourse(DashboardPg.java:58)
 	at dashboardtest.DashboardPgTest.veriryPythonPgTitle(DashboardPgTest.java:37)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">dashboardtest.DashboardPgTest#verirySelePgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window
-  (Session info: chrome=104.0.5112.102)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-NUE1PJR8&apos;, ip: &apos;192.168.1.218&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Hanumant\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef1d55ebf0d8575c298c836228c524f0
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at dashboardpg.DashboardPg.clickSeleCourse(DashboardPg.java:38)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">dashboardtest.DashboardPgTest#verirySelePgTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at dashboardpg.DashboardPg.clickSeleCourse(DashboardPg.java:35)
 	at dashboardtest.DashboardPgTest.verirySelePgTitle(DashboardPgTest.java:18)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">dashboardtest.DashboardPgTest#veriryUserPgLoad</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>UserpgTest</h2><h3 id="m11">userpgtest.UserPgTest#varifyMobileNoOfUsers</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [1] but found [2]
-	at userpgtest.UserPgTest.varifyMobileNoOfUsers(UserPgTest.java:31)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">userpgtest.UserPgTest#countOfMaleUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">userpgtest.UserPgTest#varifyMahaStateOccur</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">userpgtest.UserPgTest#varifyMailsOfMahaState</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">userpgtest.UserPgTest#veriryOperatorsPgLoad</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>OperatorsTest</h2><h3 id="m16">operatorspgtest.OperatorsPgTest#varifyAvailOpByDays</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">operatorspgtest.OperatorsPgTest#varifyAvailTechPerson</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">operatorspgtest.OperatorsPgTest#varifyPhNoOfKiran</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">operatorspgtest.OperatorsPgTest#varifyUsefulLinksPg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>DownloadsTest</h2><h3 id="m20">downloadstest.DownloadsTest#validVendCommonOpSystem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Considered vendors dont have Common op-System: lists don&apos;t have the same size expected [2] but found [0]
-	at downloadstest.DownloadsTest.validVendCommonOpSystem(DownloadsTest.java:24)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">downloadstest.DownloadsTest#validvalidVendCommonOpSystem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Considered vendors dont have 32bit op-System: lists don&apos;t have the same size expected [4] but found [0]
-	at downloadstest.DownloadsTest.validvalidVendCommonOpSystem(DownloadsTest.java:36)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m22">downloadstest.DownloadsTest#validLogoutPg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">dashboardtest.DashboardPgTest#veriryUserPgLoad</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at dashboardpg.DashboardPg.clickUser(DashboardPg.java:78)
+	at dashboardtest.DashboardPgTest.veriryUserPgLoad(DashboardPgTest.java:51)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LoginPgTest</h2><h3 id="m5">loginpgtest.LoginPgTest#varifyPasswordByLowCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at loginpgtest.LoginPgTest.varifyPasswordByLowCase(LoginPgTest.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">loginpgtest.LoginPgTest#varifyPasswordByUpCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at loginpgtest.LoginPgTest.varifyPasswordByUpCase(LoginPgTest.java:65)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">loginpgtest.LoginPgTest#varifyEmailByExtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">loginpgtest.LoginPgTest#varifyEmailBySymbol</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">loginpgtest.LoginPgTest#varifyNewPgLoad</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">loginpgtest.LoginPgTest#varifyPasswordByDigits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

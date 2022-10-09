@@ -15,14 +15,11 @@ public class MyListeners extends BaseClass implements ITestListener{
 		report.flush();
 	}
 
-	
 	public void onStart(ITestContext result) {
-		reportInhit();
+		
 	}
 
-	
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		
 		
 	}
 
@@ -33,18 +30,15 @@ public class MyListeners extends BaseClass implements ITestListener{
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		test.log(Status.SKIP,"Test case skiped with test name:"+result.getName());
-		
+		test.log(Status.SKIP,"Test case skiped with test name:"+result.getName());		
 	}
 
 	public void onTestStart(ITestResult result) {
-		test = report.createTest(result.getName());
-		
+		test = report.createTest(result.getName());		
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS,"Test case Passed with test name:"+result.getName());
-		
+		test.log(Status.PASS,"Test case Passed with test name:"+result.getName());		
 	}
 
 }

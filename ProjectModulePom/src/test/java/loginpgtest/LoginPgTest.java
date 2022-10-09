@@ -2,6 +2,7 @@ package loginpgtest;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -17,6 +18,11 @@ public class LoginPgTest extends BaseClass {
 	public static DashboardPg dashboard = null;
 	SoftAssert soft = new SoftAssert();
 
+	@BeforeSuite
+	public void beforesuite(){
+		reportInhit();
+	}
+	
 	@BeforeMethod
 	public void beforeMethod(){
 	initilization();
